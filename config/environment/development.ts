@@ -8,6 +8,6 @@ export default {
   ],
   mongo: {
     // uri: 'mongodb://mongo/typeExpress-dev'
-    uri: 'mongodb://brocker:brocker1@ds163650.mlab.com:63650/brocker'
+    uri: 'mongodb://testuser:testuser1@ds161710.mlab.com:61710/stock-market-broker'
   },
 };
