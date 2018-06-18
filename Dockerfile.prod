@@ -7,7 +7,8 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
+RUN apk update && apk upgrade && \
+apk add --no-cache bash git openssh
+
 RUN npm install -g nodemon typescript@2.6 tslint mocha yarn
 RUN git clone https://github.com/nadunindunil/broker-api.git && cd broker-api && yarn
-RUN tsc
-RUN nodemon --delay 500ms ./dist/app.js
